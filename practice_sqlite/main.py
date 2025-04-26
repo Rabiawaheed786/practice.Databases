@@ -20,8 +20,8 @@ with engine.connect() as conn:
     conn.execute(
         text("INSERT INTO person_table (name, age) VALUES (:name, :age)"),
         [
-            {"name": "Samreen", "age": 25},
-            {"name": "Amber", "age": 30},
+            {"name": "rabia", "age": 25},
+            {"name": "waheed", "age": 30},
             {"name": "Bob", "age": 35},
             {"name": "Alice", "age": 40},
             {"name": "Charlie", "age": 45},
@@ -33,7 +33,7 @@ with engine.connect() as conn:
     # conn.execute(text(
     #     """
     #     DELETE FROM person_table
-    #     WHERE name =='Samreen';
+    #     WHERE name =='rabia';
     #     """
     # ))
 
@@ -45,7 +45,7 @@ with engine.connect() as conn:
 #         text(
 #             """
 #             UPDATE person_table
-#             SET age = 50
+#             SET age = 25
 #             WHERE name == 'Bob';
 #             """
 #         )

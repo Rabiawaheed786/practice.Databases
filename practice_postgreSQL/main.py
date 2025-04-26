@@ -24,9 +24,9 @@ def main():
         conn.commit()
         conn.execute(text("""
              INSERT INTO users (name, email)
-             VALUES ('Saif', 'saif@example.com'),
-                    ('Haseeb', 'haseeb@example.com'),
-                    ('Ammar', 'ammar@example.com');
+             VALUES ('abc', 'abc@example.com'),
+                    ('rabia', 'rabia@example.com'),
+                    ('waheed', 'waheed@example.com');
          """))
         conn.commit()
 
